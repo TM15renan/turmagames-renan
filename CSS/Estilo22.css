@@ -8,9 +8,11 @@ body{
 }
 div.gallery {
   border: 1px solid #ccc;
+  	border-radius: 5px;
 }
 div.gallery:hover {
   border: 1px solid #777;
+  	border-radius: 5px;
 }
 div.gallery img {
   width: 100%;
@@ -48,8 +50,10 @@ nav ul.justify-content-center li a{
 	float: left;
 	font-weight: bold;
 }
-ul.justify-content-center li.fotoo a{
+li.fotoo{
 	padding: 8px 16px;
+	text-align: center;
+	background: rgba(242, 180, 126, 0.3);
 }
 nav ul.justify-content-center li a.active{
 	background-color:  #FDC180;
@@ -148,12 +152,21 @@ a.bott{
 	border-radius: 3px;
 	box-shadow: 4px 4px gray;
 	color: #363636;
+	text-decoration: none;
 }
 a.voltar{
 	text-decoration: none;
   border: 2px solid #F2B47E;
   border-radius: 5px;
   padding: 4px 10px;
+  color: #004A8D;
+}
+a.voltar:hover:not(.active){
+	text-decoration: none;
+  border: 2px solid #004A8D;
+  border-radius: 5px;
+  padding: 4px 10px;
+  color: #F2B47E;
 }
 p{
 	font-family: Arial;
@@ -166,6 +179,7 @@ h2{
 	text-align: center;
 	border-radius: 3px;
 	color: #363636;
+	padding: 4px;
 }
 h2 a{
 	text-decoration: none;
@@ -184,6 +198,9 @@ h3{
 	padding: 2px;
 	text-align: left;
 	color: #363636;
+	border: 2px solid #F2B47E;
+  border-radius: 5px;
+  padding: 4px 10px;
 }
 ul li{
 	font-family: Arial;
